@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Team Directory</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <header class="bar">
+      <a href="#" class="brand">Team Directory</a>
+      <a href="#users">People</a>
+      <a href="https://jsonplaceholder.typicode.com" class="push" target="_blank" rel="noopener">Data source</a>
+    </header>
+
+    <main>
+      <h1>People</h1>
+
+      <form id="search-form" role="search">
+        <label for="search">Filter by name</label>
+        <input id="search" name="search" type="search" autocomplete="off" />
+      </form>
+
+      <p id="status" role="status" aria-live="polite"></p>
+      <ul id="users" class="gallery"></ul>
+    </main>
+
+    <footer>
+      <p>Starter project for the Frontend Fundamentals course.</p>
+    </footer>
+  </body>
+</html>
